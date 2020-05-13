@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="bootstrap.css" rel="stylesheet" type="text/css" />
+      <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body class="body">
+   <section class="tab_div">
+      <div class="tab">
+         <button class="tablinks" onclick="openCity(event, 'Accommodation')" id="defaultOpen">Accommodation</button>
+         <button class="tablinks" onclick="openCity(event, 'Activities')">Activities</button>
+         <button class="tablinks" onclick="openCity(event, 'Events')">Events</button>
+         <button class="tablinks" onclick="openCity(event, 'Cars')">Cars</button>
+      </div>
+      <div id="Accommodation" class="tabcontent">
+        <div class="row">
+          <div class="col-md-12">
+              <h1 style="text-align: center;"><strong>SEARCH & BOOK</strong></h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <form method="post" action="">
+              <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>where to go? :</label>
+                <div class="frstDiv" data-id="selectBox">
+                    <select name="places" id="whereTogo" class="form-control" > </select>
+                </div>
+                <div class="search_result">
+                  <h3>Regions / Area</h3>
+                  <ul class="areaList">
+                    <li class="result_item"><a>Coastal Areas</a></li>
+                    <li class="result_item"><a>Inland</a></li>
+                    <li class="result_item"><a>senja Island</a></li>
+                    <li class="result_item"><a>Africa</a></li>
+                    <li class="result_item"><a>India</a></li>
+                    <li class="result_item"><a>Straumsbukta</a></li>
+                    <li class="result_item"><a>Bardufoss</a></li>
+                    <li class="result_item"><a>Polarbadet</a></li>
+                  </ul>
+                </div>
+                <a href="javascript:void(0);" onclick='changeSelect()' class="freeTextSearchBtn">Click here for free text search</a>
+              </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                  <div class="form-group">
+                  <label>Type of accommodation</label>
+                  <select name="places" id="accommodation" class="form-control">
+                  </select>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                  <label for="checkIn">Check in :</label>
+                  <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy" >
+                      <input class="form-control" type="text" name="checkIn" id="datepick" />
+                      <span class="input-group-addon dayLable1 datePickLabel" ><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                  </div>
+                   <span class="checkInDay"></span>
+                   </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                  <label for="checkOut">Check out :</label>
+                   <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy" >
+                      <input class="form-control" type="text" name="checkOut" id="datepick2"  data-id="cba" />
+                      <span class="input-group-addon dayLable2 datepick2Lbel"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                   </div>
+                   <div class="checkout_div"><span class="checkOutDay"></span><span class="totalDays"></span></div>
+                   </div>
+              </div>
+              <div class="col-md-12">
+                  <div class="form-group">
+                      <label class="dateLabl"> <input type="checkbox" class="specificDates">I have no specific dates</label>
+                  </div>
+              </div>
+             
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                <label>Guests:</label>
+              <a href="javascript:void(0);" class="guestLinksBtn"> <div class="guestLinks">
+               <span class="roomCount"></span> <span class="totalCount"></span>
+                </div></a> 
+                <div class="guestForm">
+                  <div class="form_rows">
+                  <table class="addGuestTable">
+                    <tbody>
+                      <tr class="g_row frstRow" id="row1">
+                          <td class="roomTitle">Room1:</td>
+                          <td>
+                            <select class="form-control noOfAdults adult_count" id="adultSelect">
+                              </select>
+                          </td>
+                          <td>
+                              <select class="form-control no_ofChild child_count" id="childSelect"></select>
+                          </td>
+                          <td>
+
+                          </td>
+                      </tr>
+                      <tr>
+                          <td colspan="4">
+                            <button type="button" class="AddRoomBtn"><i class="fa fa-plus-square" aria-hidden="true"></i> Add Room</button>
+                          </td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div>
+                  <div class="guestFormFooter">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <button type="button" class="cancelBtn">Cancel</button>
+                      </div>
+                      <div class="col-md-6">
+                          <button type="button" class="doneBtn">Done</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+             <button class="btn">Search</button>
+            </div>
+          </div>
+
+            </form>
+          </div>
+        </div>
+        </div>      
+      </div>
+      <div id="Activities" class="tabcontent">
+          <h1 style="text-align: center;"><strong>Activities</strong></h1>
+      </div>
+      <div id="Events" class="tabcontent">
+          <h1 style="text-align: center;"><strong>Events</strong></h1>
+      </div>
+      <div id="Cars" class="tabcontent">
+          <h1 style="text-align: center;"><strong>Cars</strong></h1>
+      </div>
+    </section>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <script src="js_functions.js"></script> 
+      <script src="script.js"></script> 
+
+   </body>
+</html>
