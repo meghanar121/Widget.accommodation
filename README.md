@@ -1,10 +1,11 @@
 # Accommodation widget for Booking hotels using Javascript and Jquery
-you check here: https://meghanar121.github.io/widget/
+check here: https://meghanar121.github.io/widget/
 
 Built using:
-*HTML
-*css
-*Bootstrap
-*JavaScript
-*jQuery
+
+* HTML
+* css
+* Bootstrap
+* JavaScript
+* jQuery
 
