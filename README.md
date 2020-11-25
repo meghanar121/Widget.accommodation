@@ -3,9 +3,9 @@ check here: https://meghanar121.github.io/widget/
 
 Built using:
 
-* HTML
-* css
-* Bootstrap
-* JavaScript
-* jQuery
+* HTML :collision:
+* css :nail_care:
+* Bootstrap	:metal:
+* JavaScript	:bomb:
+* jQuery :blue_heart:
 
